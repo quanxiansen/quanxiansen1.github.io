@@ -149,6 +149,179 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-字符串调用方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var s=&quot;hello,world&quot;</div></pre></td></tr></table></figure>
+<p>定义一个字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.charAt(0)</div></pre></td></tr></table></figure>
+<p>h:第一个字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.charAt(s.length-1)</div></pre></td></tr></table></figure>
+<p>d:最后一个字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.substring(1,4)</div></pre></td></tr></table></figure>
+<p>ell   第2~4个字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.slice(1,4)</div></pre></td></tr></table></figure>
+<p>同上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.slice(-3)</div></pre></td></tr></table></figure>
+<p>rld  截取后三位</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.indexOf(&quot;l&quot;)</div></pre></td></tr></table></figure>
+<p>2   l首次出现的位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.lastIndexOf(&quot;l&quot;)</div></pre></td></tr></table></figure>
+<p>10   字符串l最后一次出现的位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.indexOf(&quot;l&quot;,3)</div></pre></td></tr></table></figure>
+<p>3   在位置3及之后首次出现字符l的位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.split(&quot;,&quot;)</div></pre></td></tr></table></figure>
+<p>[“hello”,”world”]分割成字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.replace(&quot;h&quot;,&quot;H&quot;)</div></pre></td></tr></table></figure>
+<p>“Hello，world”：全文字符串替换</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s.toUpperCase()</div></pre></td></tr></table></figure>
+<p>“HEELO,WORLD”:全文大写</p>
+<p>可以使用方括号的方法来访问字符串的单个字符<br>s=”hello,world”;<br>s[0]    “h”</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/17/字符串调用方法/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-javascript中math对象的属性定义的函数和常量" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.pow(2,53)</div></pre></td></tr></table></figure>
+<p>//=&gt; 9007199254740992         2的53次幂</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.round(.6)</div></pre></td></tr></table></figure>
+<p>// =&gt; 1.0 四舍五入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.ceil(.6)</div></pre></td></tr></table></figure>
+<p>// =&gt; 1.0  向上求整</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.floor(.6)</div></pre></td></tr></table></figure>
+<p>// =&gt; 0 向上求整</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.abs(-5)</div></pre></td></tr></table></figure>
+<p>// =&gt; 5   求绝对值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.max(x,y,z)</div></pre></td></tr></table></figure>
+<p>// =&gt; 返回最大值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.min(x,y,z)</div></pre></td></tr></table></figure>
+<p>// =&gt; 返回最小值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.random()</div></pre></td></tr></table></figure>
+<p>// =&gt; 生成一个大于0小于1.0的伪随机数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.PI</div></pre></td></tr></table></figure>
+<p>// =&gt; π，圆周率</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.E</div></pre></td></tr></table></figure>
+<p>// =&gt; e 自然对数的底数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.sqrt(3)</div></pre></td></tr></table></figure>
+<p>// =&gt; 3的平方根</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.pow(3,1/3)</div></pre></td></tr></table></figure>
+<p>// =&gt; 3的立方根</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.sin(0)</div></pre></td></tr></table></figure>
+<p>// =&gt; 三角函数：还有Math.cos,Math.tan等</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.log(0)</div></pre></td></tr></table></figure>
+<p>// =&gt; 10的自然对数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.log(100)/Math.LN10</div></pre></td></tr></table></figure>
+<p>// =&gt; 以10为底100的对数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.log(512)/Math.LN2</div></pre></td></tr></table></figure>
+<p>// =&gt; 以2为底512的对数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.exp(3)</div></pre></td></tr></table></figure>
+<p>// =&gt; e的三次幂</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/17/javascript中math对象的属性定义的函数和常量/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-vue.js" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="vue-js笔记"><a href="#vue-js笔记" class="headerlink" title="vue.js笔记"></a>vue.js笔记</h2><p>1、轻量级的mvvm框架，同时吸收了angular和react的优点</p>
+<p>2、安装vue环境，具体可参考<a href="http://cn.vuejs.org/v2/guide/installation.html" target="_blank" rel="external">vue官网</a><br>1） 命令行安装<br>在终端 <code>sudo npm install -g vue-cli</code><br>2) 安装完成后创建一个基于 webpack 模板的新项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vue init webpack my-project(my-project为项目的名称)</div></pre></td></tr></table></figure>
+<p>会发现我们电脑多了一个my-project的文件夹<br>3） cd my-project  进入到该项目的根目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install</div></pre></td></tr></table></figure>
+<p>安装项目的依赖，会发现这个文件夹里面多了node_moudles这个文件夹<br>4）<code>npm run dev</code> 让整个项目跑起来，在浏览器输入localhost:8080,会打开vue.js的初始页<br>跑的时候发生错误，vue和vue-template-compiler 版本不一致，打开vue-template-compiler文件夹的packagk.json文件夹，修改里面的版本号，修改和vue版本号一致</p>
+<p>3、vue所有的数据放在data里面，data里面也是对象的形式，进行双向数据绑定</p>
+<p>4、new一个vue对象的时候可以设置它的属性，其中最重要的包括3个，分别是data，methods,watch<br>其中data代表vue对象数据，methods代表vue对象的方法，watch设置了对象的监听的方法。<br>vue对象里面的设置通过html指令进行关联<br>重要的指令包括<br>v-text 渲染数据<br>v-if 控制显示<br>v-on 绑定事件<br>v-for 循环渲染</p>
+<p>5、</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/17/vue.js/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-grunt" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

@@ -6,17 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | YOLO</title>
+  <title>YOLO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="You Only Live Once">
-<meta property="og:type" content="website">
+  <meta name="description" content="vue.js笔记1、轻量级的mvvm框架，同时吸收了angular和react的优点
+2、安装vue环境，具体可参考vue官网1） 命令行安装在终端 sudo npm install -g vue-cli2) 安装完成后创建一个基于 webpack 模板的新项目
+1sudo vue init webpack my-project(my-project为项目的名称)
+会发现我们电脑多了一个my-pr">
+<meta property="og:type" content="article">
 <meta property="og:title" content="YOLO">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/03/17/vue.js/index.html">
 <meta property="og:site_name" content="YOLO">
-<meta property="og:description" content="You Only Live Once">
+<meta property="og:description" content="vue.js笔记1、轻量级的mvvm框架，同时吸收了angular和react的优点
+2、安装vue环境，具体可参考vue官网1） 命令行安装在终端 sudo npm install -g vue-cli2) 安装完成后创建一个基于 webpack 模板的新项目
+1sudo vue init webpack my-project(my-project为项目的名称)
+会发现我们电脑多了一个my-pr">
+<meta property="og:updated_time" content="2017-03-17T06:21:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="YOLO">
-<meta name="twitter:description" content="You Only Live Once">
+<meta name="twitter:description" content="vue.js笔记1、轻量级的mvvm框架，同时吸收了angular和react的优点
+2、安装vue环境，具体可参考vue官网1） 命令行安装在终端 sudo npm install -g vue-cli2) 安装完成后创建一个基于 webpack 模板的新项目
+1sudo vue init webpack my-project(my-project为项目的名称)
+会发现我们电脑多了一个my-pr">
   
     <link rel="alternative" href="/atom.xml" title="YOLO" type="application/atom+xml">
   
@@ -147,211 +157,158 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-vue.js" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="vue-js笔记"><a href="#vue-js笔记" class="headerlink" title="vue.js笔记"></a>vue.js笔记</h2><p>1、轻量级的mvvm框架，同时吸收了angular和react的优点</p>
+<p>2、安装vue环境，具体可参考<a href="http://cn.vuejs.org/v2/guide/installation.html" target="_blank" rel="external">vue官网</a><br>1） 命令行安装<br>在终端 <code>sudo npm install -g vue-cli</code><br>2) 安装完成后创建一个基于 webpack 模板的新项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vue init webpack my-project(my-project为项目的名称)</div></pre></td></tr></table></figure>
+<p>会发现我们电脑多了一个my-project的文件夹<br>3） cd my-project  进入到该项目的根目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install</div></pre></td></tr></table></figure>
+<p>安装项目的依赖，会发现这个文件夹里面多了node_moudles这个文件夹<br>4）<code>npm run dev</code> 让整个项目跑起来，在浏览器输入localhost:8080,会打开vue.js的初始页<br>跑的时候发生错误，vue和vue-template-compiler 版本不一致，打开vue-template-compiler文件夹的packagk.json文件夹，修改里面的版本号，修改和vue版本号一致</p>
+<p>3、vue所有的数据放在data里面，data里面也是对象的形式，进行双向数据绑定</p>
+<p>4、new一个vue对象的时候可以设置它的属性，其中最重要的包括3个，分别是data，methods,watch<br>其中data代表vue对象数据，methods代表vue对象的方法，watch设置了对象的监听的方法。<br>vue对象里面的设置通过html指令进行关联<br>重要的指令包括<br>v-text 渲染数据<br>v-if 控制显示<br>v-on 绑定事件<br>v-for 循环渲染</p>
+<p>5、</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>给你点个大大的赞        比心❤️<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/17/字符串调用方法/" class="archive-article-date">
-  	<time datetime="2017-03-17T07:56:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/17/vue.js/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/17/javascript中math对象的属性定义的函数和常量/" class="archive-article-date">
-  	<time datetime="2017-03-17T06:39:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/17/vue.js/" class="archive-article-date">
-  	<time datetime="2017-03-17T06:21:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2017/03/17/javascript中math对象的属性定义的函数和常量/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/08/grunt/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/08/grunt/" class="archive-article-date">
-  	<time datetime="2017-03-08T08:04:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-08</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/07/添加评论/" class="archive-article-date">
-  	<time datetime="2017-03-07T09:22:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/07/添加音乐/" class="archive-article-date">
-  	<time datetime="2017-03-07T09:14:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/07/修改主题/" class="archive-article-date">
-  	<time datetime="2017-03-07T08:54:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/07/hexo/" class="archive-article-date">
-  	<time datetime="2017-03-07T08:45:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/07/如何上传文章/" class="archive-article-date">
-  	<time datetime="2017-03-07T08:43:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-07</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="vue.js" data-title="" data-url="http://yoursite.com/2017/03/17/vue.js/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+
 
 
           </div>
@@ -374,8 +331,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
