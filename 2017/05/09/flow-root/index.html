@@ -8,29 +8,22 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>YOLO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CSS Grid布局比如一个这样的HTML结构：
-123456&amp;lt;div class=&amp;quot;grid-container&amp;quot;&amp;gt;       &amp;lt;div class=&amp;quot;grid-items&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;       &amp;lt;div class=&amp;quot;grid-items&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;">
+  <meta name="description" content="flow-root简单来说就是用来清除浮动 用在父元素
+元素容器会生成一个块盒子，并且块盒子里的内容是使用流布局。它总是为它建立一个新的块格式化上下文内容。如果你对CSS中浮动有所了解之后，你不难发现，容器里的元素浮动之后，会造成容器的坍塌现象之类的。
+通过clearfix之后，能让其变得正常：看到这里，或许你知道flow-root的特性是什么了。其实正如你所想的一样：flow-root是最新一种">
 <meta property="og:type" content="article">
 <meta property="og:title" content="YOLO">
-<meta property="og:url" content="http://yoursite.com/2017/05/08/CSS Grid布局/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/05/09/flow-root/index.html">
 <meta property="og:site_name" content="YOLO">
-<meta property="og:description" content="CSS Grid布局比如一个这样的HTML结构：
-123456&amp;lt;div class=&amp;quot;grid-container&amp;quot;&amp;gt;       &amp;lt;div class=&amp;quot;grid-items&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;       &amp;lt;div class=&amp;quot;grid-items&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;">
-<meta property="og:image" content="http://img.blog.csdn.net/20170508164925239?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20170508165710805?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20170508165926103?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20170508170238512?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20170508173633781?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20170508174028426?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20170508174307265?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20170508175027846?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20170508175324538?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-05-08T09:55:19.000Z">
+<meta property="og:description" content="flow-root简单来说就是用来清除浮动 用在父元素
+元素容器会生成一个块盒子，并且块盒子里的内容是使用流布局。它总是为它建立一个新的块格式化上下文内容。如果你对CSS中浮动有所了解之后，你不难发现，容器里的元素浮动之后，会造成容器的坍塌现象之类的。
+通过clearfix之后，能让其变得正常：看到这里，或许你知道flow-root的特性是什么了。其实正如你所想的一样：flow-root是最新一种">
+<meta property="og:updated_time" content="2017-05-09T07:00:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="YOLO">
-<meta name="twitter:description" content="CSS Grid布局比如一个这样的HTML结构：
-123456&amp;lt;div class=&amp;quot;grid-container&amp;quot;&amp;gt;       &amp;lt;div class=&amp;quot;grid-items&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;       &amp;lt;div class=&amp;quot;grid-items&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;">
-<meta name="twitter:image" content="http://img.blog.csdn.net/20170508164925239?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta name="twitter:description" content="flow-root简单来说就是用来清除浮动 用在父元素
+元素容器会生成一个块盒子，并且块盒子里的内容是使用流布局。它总是为它建立一个新的块格式化上下文内容。如果你对CSS中浮动有所了解之后，你不难发现，容器里的元素浮动之后，会造成容器的坍塌现象之类的。
+通过clearfix之后，能让其变得正常：看到这里，或许你知道flow-root的特性是什么了。其实正如你所想的一样：flow-root是最新一种">
   
     <link rel="alternative" href="/atom.xml" title="YOLO" type="application/atom+xml">
   
@@ -161,35 +154,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CSS Grid布局" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-flow-root" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="CSS-Grid布局"><a href="#CSS-Grid布局" class="headerlink" title="CSS Grid布局"></a>CSS Grid布局</h2><p>比如一个这样的HTML结构：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;grid-container&quot;&gt;</div><div class="line">       &lt;div class=&quot;grid-items&quot;&gt;&lt;/div&gt;</div><div class="line">       &lt;div class=&quot;grid-items&quot;&gt;&lt;/div&gt;</div><div class="line">       &lt;div class=&quot;grid-items&quot;&gt;&lt;/div&gt;</div><div class="line">       &lt;div class=&quot;grid-items&quot;&gt;&lt;/div&gt;</div><div class="line">   &lt;/div&gt;</div></pre></td></tr></table></figure>
-<p>使用 CSS Grid布局首要的第一步，就是通过display:grid;来对容器声明一个网格容器，那么这个div元素里面对应的子元素就自动成为网格项目。</p>
-<p>虽然你在div.grid-container中设置了display:grid;，声明了这个元素为Grid容器，但在浏览器中，并看不到有任何的变化。但在在幕后中，他们还是发生了变化，div.grid-container是一个Grid容器，他的所有子元素就自动变成了网格项目。</p>
-<p>接下来，使用grid-template-columns: 1fr 1fr 1fr;来定义三列网格：<br><img src="http://img.blog.csdn.net/20170508164925239?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>再给.grid-container中添加grid-gap:5px：<br><img src="http://img.blog.csdn.net/20170508165710805?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>看到变化了吧，整个网格分了三个列，单元格之间有5px的间距，同时每列的列宽是整个宽度的三分之一，那是因为我们采用了fr单位，而且把整个网格分成了三列，每列的宽度是1fr。这里告诉我们三个知识点：</p>
-<ul>
-<li>grid-template-columns用来把网格指定列的宽度</li>
-<li>grid-gap用来指定列（或行）的间距</li>
-<li><p>fr可以自动根据网格容器的宽度来计算列的宽度</p>
-<p>现在我们把grid-template-columns的值改成：1fr 2fr 1fr，对应的效果就会变成<br><img src="http://img.blog.csdn.net/20170508165926103?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>现在第二列的宽度是第一列和最后一列的两倍。这也再次证明fr单位的强大之处，使用它可以让你很容易定义你的网格尺寸。</p>
-</li>
-</ul>
-<p>现在越来越接近我们想要的网格。但需求是不断变化的，比如我们现在想让顶部的第一行尽可能的宽，比如说跨整个网格列（比如我们网页的头部，或者说我们常见的导航）。如此一来，只需要在第一个网格上使用grid-column: 1 / 4：<br><img src="http://img.blog.csdn.net/20170508170238512?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>或许第一次接触1 / 4会令你感到神秘，其实这个涉及到了CSS Grid中的重要概念之一，那就是网格线，其中第一个数字是列的起始网格线位置，第二个数字是线束网格线的位置。对于一个CSS Grid，可以通过grid-template-columns创建列网格线，grid-template-rows创建行网格线。这种方式创建的是一种显式的网格线。当然，除了这种方式，还可以创建隐式网格线。除此之外，还可以使用grid-auto-rows和grid-auto-columns可以创建一个隐式网格。这个隐式网格对应的网格线就被称之为隐式网格线。</p>
-<p>接下来，我们想要有一个侧边栏，并且让他的位置是垂直方向的2 / 3。我们可以使用grid-row: 2 / 4来实现，这个特性和grid-column非常的类似。这个时候，效果变成这样：<br><img src="http://img.blog.csdn.net/20170508173633781?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>其实CSS Grid看上去和表格非常的类似，在表格中我们有一个专业的术语，合并单元格。其实在CSS Grid布局中，我们同样有一个类似的特性，那就是在grid-column或者grid-row中引入关键词span，在关键词span后面紧跟一个数值，就是表示合并单元格的数量，先来看下图：<br><img src="http://img.blog.csdn.net/20170508174028426?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>上面的示例中，我们使用到了grid-column: 2 / span 1和grid-row: 2 / span 2。其中grid-column: 2 / span 1表示从列网格线2开始，跨度是1个列网格线（其实就是合并一个列单元格）。而grid-row: 2 / span 2表示的是从行网格线2开始，跨度是两个两个线（其实就是合并两个行单元格）。</p>
-<p>接着我们来做页脚，在做页脚之前，我们先删除两个网格项目，因为不需要他们了。做页脚和做页头非常的类似，继续使用grid-column: 1 / 4即可：<br><img src="http://img.blog.csdn.net/20170508174307265?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>通过上面的方式，我们可以轻易的控制网格，也能非常容易的实现一个Web面页的布局，比如一个三列的布局。但我们在布局中经常还需要控制对齐方式，特别是在CSS Grid的布局当中，比如下面的示例中，我们第三列并未占满整个高度，这个时候希望它能底部对齐。此时为了实现这样的效果，需要使用到CSS中的对齐模块特性，比如在这里，我们可以使用align-self: end来实现：<br><img src="http://img.blog.csdn.net/20170508175027846?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>align-self是CSS中的一个新模块特性Box Alignment中的一个属性。<br>如果你对上面的相关知识有所了解的话，你就可以很轻易的使用CSS Grid相关知识实现一个常用的Web页面布局效果。比如下面这张图，为了好完，我把主内容的容器设置了具体的宽度，并且通过Box Alignment属性，让这个区域水平垂直居中：<br><img src="http://img.blog.csdn.net/20170508175324538?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.grid-items.three&#123;</div><div class="line">           grid-column: 2 / span 1;</div><div class="line">            grid-row:2 / span 2;</div><div class="line">            width:300px;</div><div class="line">            height:100px;</div><div class="line">            justify-self: center;</div><div class="line">            align-self: center;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
-<p>整个示例的代码<br>css<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;</div><div class="line">        .grid-container&#123;</div><div class="line">            display: grid;</div><div class="line">            grid-template-columns: 1fr 2fr 1fr;</div><div class="line">            grid-gap:5px;</div><div class="line">            height:500px;</div><div class="line">        &#125;</div><div class="line">        .grid-items&#123;</div><div class="line">            background: lawngreen;</div><div class="line">        &#125;</div><div class="line">        .grid-items.one&#123;</div><div class="line">            grid-column: 1 / 4;</div><div class="line">        &#125;</div><div class="line">        .grid-items.two&#123;</div><div class="line">            /*height:300px;*/</div><div class="line">            grid-row: 2 /4;</div><div class="line">        &#125;</div><div class="line">        .grid-items.three&#123;</div><div class="line">           grid-column: 2 / span 1;</div><div class="line">            grid-row:2 / span 2;</div><div class="line">            width:300px;</div><div class="line">            height:100px;</div><div class="line">            justify-self: center;</div><div class="line">            align-self: center;</div><div class="line">        &#125;</div><div class="line">        .grid-items.four&#123;</div><div class="line">            grid-column: 1 / 4;</div><div class="line">        &#125;</div><div class="line">        .grid-items.five&#123;</div><div class="line">            grid-row: 2/4;</div><div class="line">            height:100px;</div><div class="line">            align-self: end;</div><div class="line">        &#125;</div><div class="line">    &lt;/style&gt;</div></pre></td></tr></table></figure></p>
-<p>html</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;grid-container&quot;&gt;</div><div class="line">        &lt;div class=&quot;grid-items one&quot;&gt;&lt;/div&gt;</div><div class="line">        &lt;div class=&quot;grid-items two&quot;&gt;&lt;/div&gt;</div><div class="line">        &lt;div class=&quot;grid-items three&quot;&gt;&lt;/div&gt;</div><div class="line">        &lt;div class=&quot;grid-items five&quot;&gt;&lt;/div&gt;</div><div class="line">        &lt;div class=&quot;grid-items four&quot;&gt;&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div></pre></td></tr></table></figure>
+        <h2 id="flow-root"><a href="#flow-root" class="headerlink" title="flow-root"></a>flow-root</h2><p><strong>简单来说就是用来清除浮动</strong> 用在父元素</p>
+<p>元素容器会生成一个块盒子，并且块盒子里的内容是使用流布局。它总是为它建立一个新的块格式化上下文内容。如果你对CSS中浮动有所了解之后，你不难发现，容器里的元素浮动之后，会造成容器的坍塌现象之类的。</p>
+<p>通过clearfix之后，能让其变得正常：<br>看到这里，或许你知道flow-root的特性是什么了。其实正如你所想的一样：flow-root是最新一种创建BFC的属性。正因为如此，大多数人都认为flow-root就是一个简单的clearfix黑魔法，也有很多人说他是最新清除浮动的最简易方案。但这个特性其实真的很有实用性。</p>
+<p>使用display:flow-root</p>
+<p>今天开始你可以使用display:flow-root。这周Firefox 53和Chrome 58两大主流浏览器在这周都发布相关消息：支持flow-root属性值。</p>
+<p>来看一个简单的示例，比如我们一个这样的结构：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;wrapper&quot;&gt; </div><div class="line">	&lt;div class=&quot;floatElement&quot;&gt;浮动元素&lt;/div&gt; </div><div class="line">	&lt;div class=&quot;floatElement&quot;&gt;浮动元素&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>我们的CSS是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.floatElement&#123; float: left; /*或者right*/ &#125;</div></pre></td></tr></table></figure>
+<p>如果仅这样操作，都会造成容器wrapper的高度塌陷。以前我们都是通过clearfix的方案（最常用的吧）来解决：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.wrapper::after &#123; </div><div class="line">	content:&apos;&apos;; </div><div class="line">	display: table;</div><div class="line">	 clear: both </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面的解决方案都是老的，其实今天我们可以在.wrapper容器上这样使用就可以达到类似clearfix的效果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.wrapper&#123; display: flow-root;&#125;</div></pre></td></tr></table></figure>
+<p>虽然主流浏览器Firefox 53+、Chrome 58+和Opera 45+都支持flow-root属性(有关于浏览器对该属性的兼容性，可以通过Caniuse.com来查询)。但实际当中，我们必竟有很多业务需求是需要兼容一些低版本的。对于一位CSS的极度爱好者，总是喜欢在项目中不断的尝试使用一些新特性。为了更好对flow-root做降级处理，我们可以通过CSS的条件属性@supports()来做相应的处理。比如上面的代码我们可以这样使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.floatElement&#123; float: left; /*或者right*/ &#125; </div><div class="line">.wrapper::after &#123; content:&apos;&apos;; display: table; clear: both &#125;</div><div class="line"> @supports(display:flow-root)&#123; </div><div class="line">	 .wrapper&#123; display: flow-root; &#125; </div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<p>当然你还可以把这样使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.floatElement&#123; float: left; /*或者right*/ &#125;</div><div class="line"> @supports not (display:flow-root) &#123; </div><div class="line"> .wrapper::after &#123; content: &apos;&apos;; display: table; clear:both; &#125; &#125;</div></pre></td></tr></table></figure>
+
       
 
       
@@ -268,7 +255,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/05/08/CSS Grid布局/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/05/09/flow-root/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -282,7 +269,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/05/09/flow-root/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/05/17/纯CSS实现瀑布流布局/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -292,7 +279,7 @@
     </a>
   
   
-    <a href="/2017/04/12/ajax动态添加数据/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/05/08/CSS Grid布局/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
@@ -307,7 +294,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="CSS Grid布局" data-title="" data-url="http://yoursite.com/2017/05/08/CSS Grid布局/"></div>
+	<div class="ds-thread" data-thread-key="flow-root" data-title="" data-url="http://yoursite.com/2017/05/09/flow-root/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
