@@ -129,7 +129,7 @@
 
 
 
-  <title> Archive | YOLO </title>
+  <title> YOLO </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -154,7 +154,9 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left 
+  
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -195,7 +197,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -205,7 +207,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -237,329 +239,1183 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+  <section id="posts" class="posts-expand">
+    
+      
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Um..! 18 posts in total. Keep on posting.
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/17/javascript中math对象的属性定义的函数和常量/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YOLO">
     </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/17/javascript中math对象的属性定义的函数和常量/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-17T14:39:35+08:00">
+                2017-03-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/17/javascript中math对象的属性定义的函数和常量/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/17/javascript中math对象的属性定义的函数和常量/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
         </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/03/17/javascript中math对象的属性定义的函数和常量/" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.pow(2,53)</div></pre></td></tr></table></figure>
+<p>//=&gt; 9007199254740992         2的53次幂</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.round(.6)</div></pre></td></tr></table></figure>
+<p>// =&gt; 1.0 四舍五入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.ceil(.6)</div></pre></td></tr></table></figure>
+<p>// =&gt; 1.0  向上求整</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.floor(.6)</div></pre></td></tr></table></figure>
+<p>// =&gt; 0 向上求整</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.abs(-5)</div></pre></td></tr></table></figure>
+<p>// =&gt; 5   求绝对值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.max(x,y,z)</div></pre></td></tr></table></figure>
+<p>// =&gt; 返回最大值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.min(x,y,z)</div></pre></td></tr></table></figure>
+<p>// =&gt; 返回最小值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.random()</div></pre></td></tr></table></figure>
+<p>// =&gt; 生成一个大于0小于1.0的伪随机数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.PI</div></pre></td></tr></table></figure>
+<p>// =&gt; π，圆周率</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.E</div></pre></td></tr></table></figure>
+<p>// =&gt; e 自然对数的底数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.sqrt(3)</div></pre></td></tr></table></figure>
+<p>// =&gt; 3的平方根</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.pow(3,1/3)</div></pre></td></tr></table></figure>
+<p>// =&gt; 3的立方根</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.sin(0)</div></pre></td></tr></table></figure>
+<p>// =&gt; 三角函数：还有Math.cos,Math.tan等</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.log(0)</div></pre></td></tr></table></figure>
+<p>// =&gt; 10的自然对数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.log(100)/Math.LN10</div></pre></td></tr></table></figure>
+<p>// =&gt; 以10为底100的对数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.log(512)/Math.LN2</div></pre></td></tr></table></figure>
+<p>// =&gt; 以2为底512的对数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Math.exp(3)</div></pre></td></tr></table></figure>
+<p>// =&gt; e的三次幂</p>
+
+          
         
-      </h1>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-17T14:39:35+08:00"
-              content="2017-03-17" >
-          03-17
-        </time>
-      </div>
+    <div>
+      
+    </div>
 
-    </header>
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/17/vue.js/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YOLO">
+    </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/03/17/vue.js/" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
         
-      </h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/17/vue.js/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-17T14:21:04+08:00"
-              content="2017-03-17" >
-          03-17
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-17T14:21:04+08:00">
+                2017-03-17
+              </time>
+            
 
-    </header>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/17/vue.js/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/17/vue.js/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="vue-js笔记"><a href="#vue-js笔记" class="headerlink" title="vue.js笔记"></a>vue.js笔记</h2><p>1、轻量级的mvvm框架，同时吸收了angular和react的优点</p>
+<p>2、安装vue环境，具体可参考<a href="http://cn.vuejs.org/v2/guide/installation.html" target="_blank" rel="external">vue官网</a><br>1） 命令行安装<br>在终端 <code>sudo npm install -g vue-cli</code><br>2) 安装完成后创建一个基于 webpack 模板的新项目</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vue init webpack my-project(my-project为项目的名称)</div></pre></td></tr></table></figure>
+<p>会发现我们电脑多了一个my-project的文件夹<br>3） cd my-project  进入到该项目的根目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install</div></pre></td></tr></table></figure>
+<p>安装项目的依赖，会发现这个文件夹里面多了node_moudles这个文件夹<br>4）<code>npm run dev</code> 让整个项目跑起来，在浏览器输入localhost:8080,会打开vue.js的初始页<br>跑的时候发生错误，vue和vue-template-compiler 版本不一致，打开vue-template-compiler文件夹的packagk.json文件夹，修改里面的版本号，修改和vue版本号一致</p>
+<p>3、vue所有的数据放在data里面，data里面也是对象的形式，进行双向数据绑定</p>
+<p>4、new一个vue对象的时候可以设置它的属性，其中最重要的包括3个，分别是data，methods,watch<br>其中data代表vue对象数据，methods代表vue对象的方法，watch设置了对象的监听的方法。<br>vue对象里面的设置通过html指令进行关联<br>重要的指令包括<br>v-text 渲染数据<br>v-if 控制显示<br>v-on 绑定事件<br>v-for 循环渲染</p>
+<p>5、</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/08/grunt/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YOLO">
+    </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/03/08/grunt/" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
         
-      </h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/08/grunt/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-08T16:04:23+08:00"
-              content="2017-03-08" >
-          03-08
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-08T16:04:23+08:00">
+                2017-03-08
+              </time>
+            
 
-    </header>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/08/grunt/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/08/grunt/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="用grunt搭建自动化前端教程"><a href="#用grunt搭建自动化前端教程" class="headerlink" title="用grunt搭建自动化前端教程"></a>用grunt搭建自动化前端教程</h2><p>1、安装node.js</p>
+<p>2、安装grunt-CLI<br>把grunt-cli安装到全局变量 <code>sudu npm install -g grunt-cli</code><br>验证grunt是否安装成功，在命令行输入grunt，出现以下结果即可<br><img src="http://img.blog.csdn.net/20170308152458682?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>3、创建一个简单的网站<br>     1）Grunt是应用于实际项目的，所以我们得有一个简单的测试网站来演示grunt的安装、使用。<br>    2）首先创建一个“grunt_test”文件夹，里面建了三个空文件夹、两个空文档。（注意 Gruntfile.js 文件的首字母大写！）<br><img src="http://img.blog.csdn.net/20170308152734423?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>    3）给package.json里面添加内容，按Json格式写<br>    <img src="http://img.blog.csdn.net/20170308152925980?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>    很简单，我们把这个网站或系统的名称、版本写了一下。<br>    “devDependencies”字面意思解释是“开发依赖项”，即我们现在这个系统，将会依赖于哪些工具来开发。<br>    另外，其实package.json中你可以增加任何符合json格式的代码，它生来自由，仅仅受json代码格式的限制。</p>
+<p>4、安装grunt<br>在grunt_text目录下面安装grunt</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install grunt --save-dev</div></pre></td></tr></table></figure>
+<p>这里需要解释的是，“—save-dev”的意思是，在当前目录安装grunt的同时，顺便把grunt保存为这个目录的开发依赖项。看到“开发依赖项”这一次，是不是觉得有些眼熟？上文在配置package.json时，其中的“devDependencies”中就会存储开发依赖项。</p>
+<p>具体保存为开发依赖项是一个什么效果？动手安装一下就是了。首先，在运行安装grunt的命令之前，package.json中的“devDependencies”对应的是空对象。</p>
+<p>现在我们来运行这行命令。你会看到几条warning提示，不用管它。然后接下来就是加载状态，一个旋转的小横线。稍等待一会儿，会提示你安装成功。<br>安装成功后打开package.json文件就会发现里面的devDependencies后面添加了东西<br><img src="http://img.blog.csdn.net/20170308153458061?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>然后看grunt_text文件夹下面多了node_modules文件夹，这个文件夹下面存放的我们下载好的grunt文件</p>
+<p>5、配置Gruntfile.js<br><img src="http://img.blog.csdn.net/20170308153833625?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>6、Grunt插件介绍<br>进入grunt官网的插件列表页面 <a href="http://www.gruntjs.net/plugins" target="_blank" rel="external">grunt</a>，我们能看到grunt到目前位置的所有插件。现在里面有4560个插件，这个数量每天都在增加。而且，这些既然出现在官网，肯定是经过审核的。</p>
+<p>　　插件分为两类。第一类是grunt团队贡献的插件，这些插件的名字前面都带有“contrib-”前缀，而且在插件列表中有星号标注。第二类是第三方提供的插件，不带有这两个特征。</p>
+<p>　　和jquery一样，插件那么多，肯定不会全部用。grunt官网插件列表的前几个插件中的前几个插件，下载量最多，它们肯定是大家都在用的插件。第一名jshint插件最近30天下载量将近89万次，这是多么惊人的下载量！</p>
+<pre><code>Contrib-jshint——javascript语法错误检查；
+Contrib-watch——实时监控文件变化、调用相应的任务重新执行；
+Contrib-clean——清空文件、文件夹；
+Contrib-uglify——压缩javascript代码
+Contrib-copy——复制文件、文件夹
+Contrib-concat——合并多个文件的代码到一个文件中
+karma——前端自动化测试工具
+</code></pre><p>　　以上这些插件，本文不会全部讲到。但是随着讲解其中的一部分，我想你就能掌握使用grunt插件的方法。知道方法了，然后你就可以参考官方文档去使用你想要的插件。</p>
+<p>7、使用uglify插件（压缩javascript代码）<br>Uglify插件的功能就是压缩javascript代码。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install grunt-contrib-uglify --save-dev</div></pre></td></tr></table></figure>
+<p>然后配置Gruntfile.js<br>第一步，在grunt.initConfig方法中配置 uglify 的配置参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">uglify:&#123;</div><div class="line">            options:&#123;</div><div class="line">                stripBanners:true,</div><div class="line">                banner:&apos;/*! &lt;%=pkg.name%&gt;-&lt;%pkg.version%&gt;.js&lt;%=grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt; */\n&apos;</div><div class="line">            &#125;,</div><div class="line">            build:&#123;</div><div class="line">                src:&apos;src/test.js&apos;,</div><div class="line">                dest:&apos;bulid/&lt;%pkg.name%&gt;-&lt;%=pkg.version%&gt;.js.min.js&apos;</div><div class="line">            &#125;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<p>第二步，在 grunt.initConfig 方法之后，要让grunt去加载这一个插件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grunt.loadNpmTasks(&apos;grunt-contrib-uglify&apos;);</div></pre></td></tr></table></figure>
+<p>第三步，在grunt命令执行时，要不要立即执行uglify插件？如果要，就写上，否则不写。我现在是需要的，所以我写上。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grunt.registerTask(&apos;default&apos;,[&apos;uglify&apos;);</div></pre></td></tr></table></figure>
+<p>然后再build文件夹里面就可以看到压缩后的js文件</p>
+<p>8、使用watch插件（真正实现自动化）<br>配置Gruntfile.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">watch:&#123;</div><div class="line">            build:&#123;</div><div class="line">                files:[&apos;src/*.js&apos;,&apos;css/*.js&apos;],</div><div class="line">                tasks:[&apos;jshint&apos;,&apos;uglify&apos;],</div><div class="line">                options:&#123;spawn:false&#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grunt.loadNpmTasks(&apos;grunt-contrib-watch&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grunt.registerTask(&apos;default&apos;,[&apos;uglify&apos;,&apos;watch&apos;]);</div></pre></td></tr></table></figure>
+<p>运行grunt命令，控制台提示watch已经开始监听。此时要想停止，按ctrl + c即可。</p>
+<p>9、批量安装插件<br>到现在为止，我刚刚安装了2个插件，“node_modules”文件夹所占据的空间就有18MB了。上传代码到开发库的时候，不上传node_modules这里面所有的文件。</p>
+<p>　　问题又来了，我如果作为开发环境的搭建者，我不把“node_modules”上传，其他一起开发的人，怎么得到这些grunt插件和工具呢？有人回答让他们自己去手动一个一个安装——首先这是一个笨方法，其次如果我当年安装的旧版本，而他们现在自己安装的可能是新版本。新旧有可能不兼容啊。</p>
+<p>　　该怎么办？</p>
+<p>　　其实答案很简单——我上传源码时候，肯定会把package.json上传上去，而package.json中的“devDependencies”就记录了这个系统的开发依赖项，然后我通过nodejs的npm即可批量安装。</p>
+<p>　　做一个试验。我在D盘下面新建一个目录“grunt_test_1”，然后把“grunt_test”中的package.json拷过去。在打开命令行跳转到“grunt_test_1”，执行“npm install”命令<br>　　此时按回车执行命令，结果在“grunt_test_1”生成了“node_modules”文件夹，里面安装好了package.json中“devDependencies”配置的插件。而且，版本都是一直的。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/07/添加评论/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YOLO">
+    </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/03/07/添加评论/" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
         
-      </h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/07/添加评论/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-07T17:22:03+08:00"
-              content="2017-03-07" >
-          03-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-07T17:22:03+08:00">
+                2017-03-07
+              </time>
+            
 
-    </header>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/07/添加评论/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/添加评论/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="给hexo添加评论功能"><a href="#给hexo添加评论功能" class="headerlink" title="给hexo添加评论功能"></a>给hexo添加评论功能</h2><p>1、进入多说<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a></p>
+<p>2、注册多说账户</p>
+<p>3、点击我要创建</p>
+<p>4、根据要求填写信息<br><img src="http://img.blog.csdn.net/20170307170112769?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>5、在  <code>theme/yilia/layout/_partial/post/</code>目录下创建文件名叫：duoshuo.ejs（ps:我的是系统直接创建的，如果有可以省略）</p>
+<p>6、把下面的代码复制进去</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;duoshuo&quot;&gt;</div><div class="line">	&lt;!-- 多说评论框 start --&gt;</div><div class="line">	&lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&lt;%=key%&gt;&quot; data-title=&quot;&lt;%=title%&gt;&quot; data-url=&quot;&lt;%=url%&gt;&quot;&gt;&lt;/div&gt;</div><div class="line">	&lt;!-- 多说评论框 end --&gt;</div><div class="line">	&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">	var duoshuoQuery = &#123;short_name:&apos;&lt;%= config.duoshuo_shortname %&gt;&apos;&#125;;</div><div class="line">	(function() &#123;</div><div class="line">		var ds = document.createElement(&apos;script&apos;);</div><div class="line">		ds.type = &apos;text/javascript&apos;;ds.async = true;</div><div class="line">		ds.src = (document.location.protocol == &apos;https:&apos; ? &apos;https:&apos; : &apos;http:&apos;) + &apos;//static.duoshuo.com/embed.js&apos;;</div><div class="line">		ds.charset = &apos;UTF-8&apos;;</div><div class="line">		(document.getElementsByTagName(&apos;head&apos;)[0] </div><div class="line">		 || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);</div><div class="line">	&#125;)();</div><div class="line">	&lt;/script&gt;</div><div class="line">	&lt;!-- 多说公共JS代码 end --&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>7、在 hexo/_comfig.yml 里边添加一下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">duoshuo_shortname: xxxx(冒号后有空格 名字是多说上面的用户名)</div></pre></td></tr></table></figure>
+<p>8、最后在 theme/yilia/_config.yml  里边添加以下代码（名字换成自己的）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">duoshuo: true</div><div class="line">short_name: xxxx  #名字换你自己在多说后台的名字(冒号后有空格)</div></pre></td></tr></table></figure>
+<p>最后提交便可以看到评论啦</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/07/添加音乐/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YOLO">
+    </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/03/07/添加音乐/" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
         
-      </h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/07/添加音乐/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-07T17:14:39+08:00"
-              content="2017-03-07" >
-          03-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-07T17:14:39+08:00">
+                2017-03-07
+              </time>
+            
 
-    </header>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/07/添加音乐/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/添加音乐/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="hexo-添加网易云音乐"><a href="#hexo-添加网易云音乐" class="headerlink" title="hexo 添加网易云音乐"></a>hexo 添加网易云音乐</h2><p>1、进入网易云音乐官网<a href="http://music.163.com/#" target="_blank" rel="external">网易</a></p>
+<p>2、到我的主页查看我的歌单</p>
+<p>3、点击你的任意一个歌单进入（前提你有创建好的歌单）</p>
+<p>4、点击生成外链播放器</p>
+<p>5、选择你想要的尺寸，复制下面的html代码<br><img src="http://img.blog.csdn.net/20170307171251569?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>6、最后打开（themes/yilia/layout/_partial/left-col.ejs）(你喜欢放在那里自己选择)<br>把复制好的网易云音乐放到第二行里边<br><img src="http://img.blog.csdn.net/20170307171408915?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>大功告成！</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/07/修改主题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YOLO">
+    </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/03/07/修改主题/" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
         
-      </h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/07/修改主题/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-07T16:54:52+08:00"
-              content="2017-03-07" >
-          03-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-07T16:54:52+08:00">
+                2017-03-07
+              </time>
+            
 
-    </header>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/07/修改主题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/修改主题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="如何更改hexo的主题"><a href="#如何更改hexo的主题" class="headerlink" title="如何更改hexo的主题"></a>如何更改hexo的主题</h2><p>1、进入到当前hexo的根目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git@github.com:litten/hexo-theme-yilia.git themes/yilia</div></pre></td></tr></table></figure>
+<p>2、在./_config.yml，修改主题为yilia<br>theme: yilia</p>
+<p>还有好多主题，换的方法都一样</p>
+<p>3、在终端<code>$ hexo s -g</code> 在本地浏览效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d -g</div></pre></td></tr></table></figure>
+<p>上传到github上</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/07/hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YOLO">
+    </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/03/07/hexo/" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
         
-      </h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/07/hexo/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-07T16:45:30+08:00"
-              content="2017-03-07" >
-          03-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-07T16:45:30+08:00">
+                2017-03-07
+              </time>
+            
 
-    </header>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/07/hexo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/hexo/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="如何用hexo-github搭建博客"><a href="#如何用hexo-github搭建博客" class="headerlink" title="如何用hexo+github搭建博客"></a>如何用hexo+github搭建博客</h2><p>本项目github地址：<a href="https://github.com/quanxiansen/quanxiansen.github.io" target="_blank" rel="external">github</a><br>一、环境安装<br>1.下载node.js(<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>)</p>
+<p>2.git</p>
+<p>3.hexo<br>1）打开mac系统终端<br>2）输入安装hexo的代码(此处安装时有可能会提示输入系统管理员密码)<br>$ sudo npm install -g hexo（mac环境下）<br>二、hexo创建静态博客<br>1.自己在本地新建文件夹，该文件夹为博客的初始文件夹</p>
+<p>2.在终端进入该文件夹，初始化博客<br>cd 文件夹路径，进入该文件夹后执行 $ hexo init命令</p>
+<pre><code>上述完成后，生成原始文件；这个新建的文件夹就是博客的根目录
+
+本地查看：启用本地服务命令(退出按ctrl+c)  $ hexo s
+
+将出现的地址输入浏览器，即可查看到本地效果
+</code></pre><p>三、github配置</p>
+<pre><code>注册github账号并登陆
+
+获取本机的SSH口令
+</code></pre><p>1）输入获取代码，回车直到出现图片所示图形为止</p>
+<p>$ ssh-keygen<br><img src="http://img.blog.csdn.net/20170307150831977?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="代码出现图形"></p>
+<p>2）输入编译代码</p>
+<p>$ vim ~/.ssh/id_rsa.pub<br>3）出现SSH口令后，复制，并在下方输入:q，随后按下回车可以退出该窗口(ps:复制时一定要将红框圈住的一起复制)<br><img src="http://img.blog.csdn.net/20170307151155765?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY1OTA0MDc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="复制的时候一定要将红框部分复制"><br>4）进入到github页面设置SSH口令</p>
+<p>点击用户下拉菜单中的settings（step1)</p>
+<p>点击左侧的SHH and GPG keys（step2)</p>
+<p>在Title中输入口令名称（随意）（step3)</p>
+<p>在key中贴上SSH口令（step4)</p>
+<pre><code>创建新的仓库
+</code></pre><p>1）创建新的仓库（repOSitory）</p>
+<p>点击用户左侧的+号菜单中的New repOSitory（step1)</p>
+<p>在repOSitory name中输入二级域名，格式请严格遵照username.github.io（step2)</p>
+<p>ps：username填写github的登录用户名，否则上线的时候会报错</p>
+<p>是否公开选项可以选取Public（step3)</p>
+<p>勾选step4处，会自动生成一份可编辑的README.md文件（建议勾选）（step4)</p>
+<p>点击create repOSitory生成仓库完毕（step5)</p>
+<p>2）查看新建的仓库（repOSitory）</p>
+<p>可以回到github个人首页点击右侧的仓库区</p>
+<p>进入后在step1处选择并复制http地址，注意此时step2处应该是空的<br>四、发布博客</p>
+<pre><code>设置blog配置文件
+</code></pre><p>1）打开blog文件夹下的_config.yml文件</p>
+<p>2）找到最下方的type，输入git（注意冒号后面是带空格的）</p>
+<p>3）repo行可能没有，需要自己输入，后面跟上github上仓库中复制的http地址（注意此时1、2两处应该是一样的username），不然上传时会报错</p>
+<p>4）其他博客设置</p>
+<p>title：博客名称</p>
+<p>subtitle：博客副标题</p>
+<p>description：博客描述</p>
+<p>author：作者</p>
+<p>language：语言（简体中文是zh-CN）</p>
+<pre><code>在终端上传博客
+</code></pre><p>1）进入终端，输入git上传插件安装代码（安装时会提示输入github用户名及密码）</p>
+<p>$ npm install hexo-deployer-git –save<br>2）安装完毕后，输入获取代码<br>$ hexo g<br>3）最后输入上传代码<br>$ hexo d<br>4）重新在github仓库查看上传文件，此时在step2中会有之前bolg中生成的文件<br>5）step3处就是你的博客地址</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/07/如何上传文章/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YOLO">
+    </span>
 
     
+      <header class="post-header">
 
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
         
-            <a class="post-title-link" href="/2017/03/07/如何上传文章/" itemprop="url">
-              
-                <span itemprop="name">Untitled</span>
-              
-            </a>
         
-      </h1>
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/07/如何上传文章/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-07T16:43:10+08:00"
-              content="2017-03-07" >
-          03-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-07T16:43:10+08:00">
+                2017-03-07
+              </time>
+            
 
-    </header>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/07/如何上传文章/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/如何上传文章/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="如何在hexo上发表文章"><a href="#如何在hexo上发表文章" class="headerlink" title="如何在hexo上发表文章"></a>如何在hexo上发表文章</h2><p>1、使用一些在线的markdown编辑器，比如csdn提供的<a href="http://write.blog.csdn.net/mdeditor" target="_blank" rel="external">下载地址</a><br>2、将写好的文章导出到本地（ps:导出格式为.md）<br>3、将导出的文件放到hexo根文件夹下的source/_posts下，这里面主要放写好的文章，格式都为.md<br>4、在终端进入到当前hexo跟文件夹下 $ hexo s -g 在本地浏览效果，如果满意 $ hexo d -g同时上传到github上面，ok一篇文章就上传ok了。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </article>
 
 
-
     
-
   </section>
 
   
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/archives/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
   </nav>
-
 
 
           
@@ -604,7 +1460,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">18</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
@@ -658,7 +1514,7 @@
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
@@ -737,12 +1593,6 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
-
 
   
 
