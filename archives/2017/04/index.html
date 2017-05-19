@@ -129,7 +129,7 @@
 
 
 
-  <title> YOLO </title>
+  <title> Archiv | YOLO </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -154,9 +154,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-  
- ">
+  <div class="container one-collumn sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,638 +237,141 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      Öhm..! Insgesamt 18 Artikel. Bleib dran.
+    </span>
+
     
+
+      
+      
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/12/ajax动态添加数据/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yolo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YOLO">
-    </span>
-
-    
-      <header class="post-header">
-
+      
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/04/12/ajax动态添加数据/" itemprop="url">
-                  Unbenannt
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-12T17:58:27+08:00">
-                2017-04-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/04/12/ajax动态添加数据/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/12/ajax动态添加数据/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-          
-            <p><strong>配置ngnix</strong></p>
-<p>nginx/conf_nix.d/global.conf   所有root都改为相对路径<code>/Users/liuyang/zpmgr-newui/WebContent;</code></p>
-<p>nginx/conf_nix.d/mgr.conf;同上</p>
-<p>nginx/conf_nix.d/mgrser.conf 服务器地址修改</p>
-<p>修改reloadNginx.sh/startNginx.sh/stopNginx.sh   文件修改</p>
-<p> reloadNginx.sh<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">basename=$(cd `dirname $0`; pwd)</div><div class="line">echo $basename</div><div class="line">sudo nginx -s reload -c $basename/nginx_nix.conf</div></pre></td></tr></table></figure></p>
-<p>startNginx.sh</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">basename=$(cd `dirname $0`; pwd)</div><div class="line">echo $basename</div><div class="line">sudo nginx -c $basename/nginx_nix.conf</div></pre></td></tr></table></figure>
-<p>stopNginx.sh</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">basename=$(cd `dirname $0`; pwd)</div><div class="line">echo $basename</div><div class="line">sudo nginx -s stop -c $basename/nginx_nix.conf</div></pre></td></tr></table></figure>
-<p> <strong>在终端</strong></p>
-<p>启动nginx</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sh startNginx.sh</div></pre></td></tr></table></figure>
-<p>修改nginx文件后，在终端需要执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sh reloadNginx.sh</div></pre></td></tr></table></figure>
-<p>修改增加，删减文件夹，在根目录执行<code>gulp</code></p>
-
-          
+            <a class="post-title-link" href="/2017/04/12/ajax动态添加数据/" itemprop="url">
+              
+                <span itemprop="name">Unbenannt</span>
+              
+            </a>
         
-      
-    </div>
+      </h1>
 
-    <div>
-      
-    </div>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-04-12T17:58:27+08:00"
+              content="2017-04-12" >
+          04-12
+        </time>
+      </div>
 
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/07/CSS 规范/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yolo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YOLO">
-    </span>
 
     
-      <header class="post-header">
 
+      
+      
+      
+
+      
+      
+
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2017/04/07/CSS 规范/" itemprop="url">
               
-                
-                <a class="post-title-link" href="/2017/04/07/CSS 规范/" itemprop="url">
-                  Unbenannt
-                </a>
+                <span itemprop="name">Unbenannt</span>
               
-            
-          </h1>
+            </a>
         
+      </h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-07T17:45:59+08:00">
-                2017-04-07
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-04-07T17:45:59+08:00"
+              content="2017-04-07" >
+          04-07
+        </time>
+      </div>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/04/07/CSS 规范/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/07/CSS 规范/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="CSS-规范"><a href="#CSS-规范" class="headerlink" title="CSS 规范"></a>CSS 规范</h2><p><strong>CSS 文档分析</strong><br>无论编写什么文档，我们都应当尽力维持统一的风格，包括统一的注释、统一的语法与统一的命名规范。</p>
-<p><strong>总则</strong><br>尽量将行宽控制在 80 字节以下。渐变（gradient）相关的语法以及注释中的 URL 等可以算作例外，毕竟这部分我们也无能为力。</p>
-<p><strong>单一文件与多文件</strong><br>有人喜欢在一份文件文件中编写所有的内容，而我在迁移至 Sass 之后开始将样式拆分成多个小文件。这都是很好的做法。无论你选择哪种，下文的规则都将适用，而且如果你遵守这些规则的话你也不会遇到什么问题。这两种写法的区别仅仅在于目录以及区块标题。</p>
-<p><strong>目录</strong><br>在 CSS 的开头，我会写一份目录，例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/*------------------------------------*\</div><div class="line">    $CONTENTS</div><div class="line">\*------------------------------------*/</div><div class="line">/**</div><div class="line"> * CONTENTS............You’re reading it!</div><div class="line"> * RESET...............Set our reset defaults</div><div class="line"> * FONT-FACE...........Import brand font files</div><div class="line"> */</div></pre></td></tr></table></figure>
-<p>这份目录可以告诉其他开发者这个文件中具体含有哪些内容。这份目录中的每一项都与其对应的区块标题相同。</p>
-<p>如果你在维护一份单文件 CSS，对应的区块将也在同一文件中。如果你是在编写一组小文件，那么目录中的每一项应当对应相应的 @include 语句。</p>
-<p><strong>区块标题</strong><br>目录应当对应区块的标题。请看如下示例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/*------------------------------------*\</div><div class="line">    $RESET</div><div class="line">\*------------------------------------*/</div></pre></td></tr></table></figure>
-<p>区块标题前缀 $ 可以让我们使用 [Cmd|Ctrl]+F 命令查找标题名的同时将搜索范围限制在区块标题中。<br>如果你在维护一份大文件，那么在区块之间空 5 行，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">/*------------------------------------*\</div><div class="line">    $RESET</div><div class="line">\*------------------------------------*/</div><div class="line">[Our</div><div class="line">reset</div><div class="line">styles]</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">/*------------------------------------*\</div><div class="line">    $FONT-FACE</div><div class="line">\*------------------------------------*/</div></pre></td></tr></table></figure>
-<p>在大文件中快速翻动时这些大块的空档有助于区分区块。</p>
-<p>如果你在维护多份、以 @include 连接的 CSS 的话，在每份文件头加上标题即可，不必这样空行。</p>
-<p><strong>代码顺序</strong></p>
-<p>尽量按照特定顺序编写规则，这将确保你充分发挥 CSS 缩写中第一个 C 的意义：cascade，层叠。</p>
-<p>一份规划良好的 CSS 应当按照如下排列：</p>
-<pre><code>Reset 万物之根源
-元素类型 没有 class 的 h1、ul 等
-对象以及抽象内容 最一般、最基础的设计模式
-子元素 由对象延伸出来的所有拓展及其子元素
-修补 针对异常状态
-</code></pre><p>如此一来，当你依次编写 CSS 时，每个区块都可以自动继承在它之前区块的属性。这样就可以减少代码相互抵消的部分，减少某些特殊的问题，组成更理想的 CSS 结构。</p>
-<p><strong>CSS 规则集分析</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[选择器]&#123;</div><div class="line">    [属性]:[值];</div><div class="line">    [&lt;- 声明 -&gt;]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>编写 CSS 样式时，习惯遵守这些规则：</p>
-<pre><code>class 名称以连字符（-）连接，除了下文提到的 BEM 命名法；
-缩进 4 空格；
-声明拆分成多行；
-声明以相关性顺序排列，而非字母顺序；
-有前缀的声明适当缩进，从而对齐其值；
-缩进样式从而反映 DOM；
-保留最后一条声明结尾的分号。
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">.widget&#123;</div><div class="line">    padding:10px;</div><div class="line">    border:1px solid #BADA55;</div><div class="line">    background-color:#C0FFEE;</div><div class="line">    -webkit-border-radius:4px;</div><div class="line">       -moz-border-radius:4px;</div><div class="line">            border-radius:4px;</div><div class="line">&#125;</div><div class="line">    .widget-heading&#123;</div><div class="line">        font-size:1.5rem;</div><div class="line">        line-height:1;</div><div class="line">        font-weight:bold;</div><div class="line">        color:#BADA55;</div><div class="line">        margin-right:-10px;</div><div class="line">        margin-left: -10px;</div><div class="line">        padding:0.25em;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
-<p>我们可以发现，.widget-heading 是 .widget 的子元素，因为前者比后者多缩进了一级。这样通过缩进就可以让开发者在阅读代码时快速获取这样的重要信息。</p>
-<p>我们还可以发现 .widget-heading 的声明是根据其相关性排列的：.widget-heading 是行间元素，所以我们先添加字体相关的样式声明，接下来是其它的。</p>
-<p><strong>命名规范</strong></p>
-<p>一般情况下我都是以连字符（-）连接 class 的名字（例如 .foo-bar 而非 .foo_bar 或 .fooBar），不过在某些特定的时候我会用 BEM（Block, Element, Modifier）命名法。</p>
-<p>BEM 命名法可以使得选择器更规范，更清晰，更具语义。</p>
-<p>该命名法按照如下格式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.block&#123;&#125;</div><div class="line">.block__element&#123;&#125;</div><div class="line">.block--modifier&#123;&#125;</div></pre></td></tr></table></figure>
-<p>其中：</p>
-<pre><code>.block 代表某个基本的抽象元素；
-.block__element 代表 .block 这一整体的一个子元素；
-.block--modifier 代表 .block 的某个不同状态。
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.person&#123;&#125;</div><div class="line">.person--woman&#123;&#125;</div><div class="line">    .person__hand&#123;&#125;</div><div class="line">    .person__hand--left&#123;&#125;</div><div class="line">    .person__hand--right&#123;&#125;</div></pre></td></tr></table></figure>
-<p>这个例子中我们描述的基本元素是一个人，然后这个人可能是一个女人。我们还知道人拥有手，这些是人体的一部分，而手也有不同的状态，如同左手与右手。</p>
-<p>这样我们就可以根据亲元素来划定选择器的命名空间并传达该选择器的职能，这个选择器是一个子元素（__）还是亲元素的不同状态（–）？</p>
-<p>由此，.page-wrapper 是一个独立的选择器。这是一个符合规范的命名，因为它不是其它元素的子元素或其它状态；然而 .widget-heading 则与其它对象有关联，它应当是 .widget 的子元素，所以我们应当将其重命名为 .widget__heading。</p>
-<p>BEM 命名法虽然不太好看，而且相当冗长，但是它使得我们可以通过名称快速获知元素的功能和元素之间的关系。与此同时，BEM 语法中的重复部分非常有利于 gzip 的压缩算法。</p>
-<p>无论你是否使用 BEM 命名法，你都应当确保 class 命名得当，力保一字不多、一字不少；将元素命名抽象化以提高复用性（例如 .ui-list，.media）。由此延伸出去的元素命名则要尽量精准（例如 .user-avatar-link）。不用担心 class 名的数量或长度，因为写得好的代码 gzip 也能有效压缩。</p>
-<p><strong>HTML 中的 class</strong></p>
-<p>为了确保易读性，在 HTML 标记中用两个空格隔开 class 名，例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;foo--bar  bar__baz&quot;&gt;</div></pre></td></tr></table></figure>
-<p>增加的空格应当可以使得在使用多个 class 时更易阅读与定位。</p>
-<p><strong>JavaScript 钩子</strong></p>
-<p>千万不要把 CSS 样式用作 JavaScript 钩子。把 JS 行为与样式混在一起将无法对其分别处理。</p>
-<p>如果你要把 JS 和某些标记绑定起来的话，写一个 JS 专用的 class。简单地说就是划定一个前缀 .js- 的命名空间，例如 .js-toggle，.js-drag-and-drop。这意味着我们可以通过 class 同时绑定 JS 和 CSS 而不会因为冲突而引发麻烦。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;th class=&quot;is-sortable  js-is-sortable&quot;&gt;</div><div class="line">&lt;/th&gt;</div></pre></td></tr></table></figure>
-<p>上面的这个标记有两个 class，你可以用其中一个来给这个可排序的表格栏添加样式，用另一个添加排序功能。</p>
-<p><strong>注释</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * 这是一个文档块（DocBlock）风格的注释。</div><div class="line"> *</div><div class="line"> * 这里开始是描述更详细、篇幅更长的注释正文。当然，我们要把行宽控制在 80 字以内。</div><div class="line"> *</div><div class="line"> * 我们可以在注释中嵌入 HTML 标记，而且这也是个不错的办法：</div><div class="line"> *</div><div class="line">    &lt;div class=foo&gt;</div><div class="line">        &lt;p&gt;Lorem&lt;/p&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line"> *</div><div class="line"> * 如果是注释内嵌的标记的话，在它前面不加星号，否则会被复制进去。</div><div class="line"> */</div></pre></td></tr></table></figure>
-<p>在注释中应当尽量详细描述代码，因为对你来说清晰易懂的内容对其他人可能并非如此。每写一部分代码就要专门写注释以详解。</p>
-<p><strong>注释的拓展用法</strong></p>
-<p>注释有许多很先进的用法，例如：</p>
-<pre><code>准修饰选择器
-代码标签
-继承标记
-</code></pre><blockquote>
-<p>准修饰选择器：</p>
-</blockquote>
-<p>你应当避免过分修饰选择器，例如如果你能写 .nav{} 就尽量不要写 ul.nav{}。过分修饰选择器将影响性能，影响 class 复用性，增加选择器私有度。这些都是你应当竭力避免的。</p>
-<p>不过有时你可能希望告诉其他开发者 class 的使用范围。以 .product-page 为例，这个 class 看起来像是一个根容器，可能是 html 或者 body 元素，但是仅凭 .product-page 则无法判断。</p>
-<p>我们可以在选择器前加上准修饰（即将前面的类型选择器注释掉）来描述我们规划的 class 作用范围：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/*html*/.product-page&#123;&#125;</div></pre></td></tr></table></figure>
-<p>这样我们就能准确获知该 class 的作用范围而不会影响复用性。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/*ol*/.breadcrumb&#123;&#125;</div><div class="line">/*p*/.intro&#123;&#125;</div><div class="line">/*ul*/.image-thumbs&#123;&#125;</div></pre></td></tr></table></figure>
-<p><strong>代码标签</strong></p>
-<p>如果你写了一个新规则的话，可以在它上面加上标签，例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * ^navigation ^lists</div><div class="line"> */</div><div class="line">.nav&#123;&#125;</div><div class="line"></div><div class="line">/**</div><div class="line"> * ^grids ^lists ^tables</div><div class="line"> */</div><div class="line">.matrix&#123;&#125;</div></pre></td></tr></table></figure>
-<p>这些标签可以使得其他开发者快速找到相关代码。如果一个开发者需要查找和列表相关的部分，他只要搜索 ^lists 就能快速定位到 .nav，.matrix 以及其它相关部分。</p>
-<p><strong>继承标记</strong></p>
-<p>将面向对象的思路用于 CSS 编写的话，你经常能找到两部分 CSS 密切相关（其一为基础，其一为拓展）却分列两处。我们可以用继承标记来在原元素和继承元素之间建立紧密联系。这些在注释中的写法如下：</p>
-<p>在元素的基本样式中：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * Extend `.foo` in theme.css</div><div class="line"> */</div><div class="line"> .foo&#123;&#125;</div></pre></td></tr></table></figure>
-<p>在元素的拓展样式中：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * Extends `.foo` in base.css</div><div class="line"> */</div><div class="line"> .bar&#123;&#125;</div></pre></td></tr></table></figure>
-<p>这样一来我们就能在两块相隔很远的代码间建立紧密联系。</p>
-<p><strong>面向对象 CSS</strong></p>
-<p>我以面向对象 CSS 的方式写代码。我把组件分成结构（对象）与外观（拓展）。正如以下分析：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.room&#123;&#125;</div><div class="line"></div><div class="line">.room--kitchen&#123;&#125;</div><div class="line">.room--bedroom&#123;&#125;</div><div class="line">.room--bathroom&#123;&#125;</div></pre></td></tr></table></figure>
-<p>我们在屋子里有许多房间，它们都有共同的部分：它们都包含地板、天花板、墙壁和门。这些共享的部分我们可以放到一个抽象的 .room{} class 中。不过我们还有其它与众不同的房间：一个厨房可能有地砖，卧室可能有地毯，洗手间可能没有窗户但是卧室会有，每个房间的墙壁颜色也许也会不一样。面向对象 CSS 的思路使得我们把相同部分抽象出来组成结构部分，然后用更具体的 class 来拓展这些特征并添加特殊的处理方法。</p>
-<p>所以比起编写大量的特殊模块，应当努力找出这些模块中重复的设计模式并将其抽象出来，写成一个可以复用的 class，将其用作基础然后编写其它拓展模块的特殊情形。</p>
-<p>当你要编写一个新组件时，将其拆分成结构和外观。编写结构部分时用最通用 class 以保证复用性，编写外观时用更具体的 class 来添加设计方法。</p>
-<p><strong>布局</strong></p>
-<p>所有组件都不要声明宽度，而由其亲元素或格栅系统来决定。</p>
-<p>坚决不要声明高度。高度应当仅仅用于尺寸已经固定的东西，例如图片和 CSS Sprite。在 p，ul，div 等元素上不应当声明高度。如果需要的话可以写 line-height，这个更加灵活。</p>
-<p>格栅系统应当当作书架来理解。是它们容纳内容，而不是把它们本身当成内容装起来，正如你先搭起书架再把东西放进去。比起声明它们的尺寸，把格栅系统和元素的其它属性分来开处理更有助于布局，也使得我们的前端工作更高效。</p>
-<p>你在格栅系统上不应当添加任何样式，他们仅仅是为布局而用。在格栅系统内部再添加样式。在格栅系统中任何情况下都不要添加盒模型相关属性。</p>
-<p><strong>UI 尺寸</strong></p>
-<p>我用很多方法设定 UI 尺寸，包括百分比，px，em，rem 以及干脆什么都不用。</p>
-<p>理想情况下，格栅系统应当用百分比设定。如上所述，因为我用格栅系统来固定栏宽和页宽，所以我可以不用理会元素的尺寸。</p>
-<p>我用 rem 定义字号，并且辅以 px 以兼容旧浏览器。这可以兼具 em 和 px 的优势。下面是一个非常漂亮的 Sass Mixin，假设你在别处声明了基本字号（base-font-size）的话，用它就可以生成 rem 以及兼容旧浏览器的 px。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">@mixin font-size($font-size)&#123;</div><div class="line">    font-size:$font-size +px;</div><div class="line">    font-size:$font-size / $base-font-size +rem;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><strong>简写</strong></p>
-<p>CSS 简写应当谨慎使用。</p>
-<p>编写像 background:red; 这样的属性的确很省事，但是你这么写的意思其实是同时声明 background-image:none; background-position:top left; background-repeat: repeat; background-color:red;。虽然大多数时候这样不会出什么问题，但是哪怕只出一次问题就值得考虑要不要放弃简写了。这里应当改为 background-color:red;。</p>
-<p>类似的，像 margin:0; 这样的声明的确简洁清爽，但是还是应当尽量写清楚。如果你只是想修改底边边距，就要具体一些，写成 margin-bottom:0;。</p>
-<p>反过来，你需要声明的属性也要写清楚，不要因为简写而波及其它属性。例如如果你只想改掉底部的 margin，那就不要用会把其它边距也清零的 margin:0。</p>
-<p>简写虽然是好东西，但是注意切勿滥用。</p>
-<p><strong>ID</strong></p>
-<p>在我们开始处理选择器之前，牢记这句话：</p>
-<p>在 CSS 里坚决不要用 ID。</p>
-<p>在 HTML 里 ID 可以用于 JS 以及锚点定位，但是在 CSS 里只要用 class，一个 ID 也不要用。</p>
-<p>Class 的优势在于复用性，而且私有度也并不高。私有度非常容易导致问题，所以将其降低就尤为重要。ID 的私有度是 class 的 255 倍，所以在 CSS 中坚决不要使用。</p>
-<p><strong>选择器</strong></p>
-<p>务必保持选择器简短高效。</p>
-<p>通过页面元素位置而定位的选择器并不理想。例如 .sidebar h3 span{} 这样的选择器就是定位过于依赖相对位置，所以把 span 移到 h3 和 sidebar 外面时就很难保持其样式。</p>
-<p>结构复杂的选择器将会影响性能。选择器结构越复杂（如 .sidebar h3 span 为三层，.content ul p a 是四层），浏览器的消耗就越大。</p>
-<p>尽量使得样式不依赖于其定位，尽量保持选择器简洁清晰。</p>
-<p>作为一个整体，选择器应当尽量简短（例如只有一层结构），但是 class 名则不应当过于简略，例如 .user-avatar 就远比 .usr-avt 好。</p>
-<p>牢记：class 无所谓是否语义化；应当关注它们是否合理。不要强调 class 名要符合语义，而要注重使用合理且不会过时的名称。</p>
-<p><strong>过度修饰的选择器</strong></p>
-<p>由前文所述，过度修饰的选择器并不理想。</p>
-<p>过度修饰的选择器是指像 div.promo 这样的。很可能你只用 .promo 也能得到相同的效果。当然你可能偶尔会需要用元素类型来修饰 class（例如你写了一个 .error 而且想让它在不同的元素类型中显示效果不一样，例如 .error{ color:red; } div.error{ padding:14px;}），但是大多数时候还是应当尽量避免。</p>
-<p>再举一个修饰过度的选择器例子，ul.nav li a{}。如前文所说，我们马上就可以删掉 ul 因为我们知道 .nav 是个列表，然后我们就可以发现 a 一定在 li 中，所以我们就能将这个选择器改写成 .nav a{}。</p>
-<p><strong>选择器性能</strong></p>
-<p>虽然浏览器性能日渐提升，渲染 CSS 速度越来越快，但是你还是应当关注效率。使用间断、没有嵌套的选择器，不把全局选择器（*{}）用作核心选择器，避免使用日渐复杂的 CSS3 新选择器可以避免这样的问题。</p>
-<p>译注，核心选择器：浏览器解析选择器为从右向左的顺序，最右端的元素是样式生效的元素，是为核心选择器。</p>
-<p><strong>使用 CSS 选择器的目的</strong></p>
-<p>比起努力运用选择器定位到某元素，更好的办法是直接给你想要添加样式的元素直接添加一个 class。我们以 .header ul{} 这样一个选择器为例。</p>
-<p>假定这个 ul 就是这个网站的全站导航，它位于 header 中，而且目前为止是 header 中唯一的 ul 元素。.header ul{} 的确可以生效，但是这样并不是好方法，它很容易过时，而且非常晦涩。如果我们在 header 中再添加一个 ul 的话，它就会套用我们给这个导航部分写的样式，哪怕我们设想的不是这个效果。这意味着我们要么要重构许多代码，要么给后面的 ul 新写许多样式来抵消之前的影响。</p>
-<p>你的选择器必须符合你要给这个元素添加样式的原因。思考一下，「我定位到这个元素，是因为它是 .header 下的 ul，还是因为它是我的网站导航？」这将决定你应当如何使用选择器。</p>
-<p>确保你的核心选择器不是类型选择器，也不是高级对象或抽象选择器。例如你在我们的 CSS 中肯定找不到诸如 .sidebar ul{} 或者 .footer .media{} 这样的选择器。</p>
-<p>表达清晰：直接找到你要添加样式的元素，而非其亲元素。不要想当然地认为 HTML 不会改变。用 CSS 直接命中你需要的元素，而非投机取巧。</p>
-<p><strong>!important</strong></p>
-<p>只在起辅助作用的 class 上用 !important。用 !important 提升优先级也可以，例如如果你要让某条规则一直生效的话，可以用 .error{ color:red!important; }。</p>
-<p>避免主动使用 !important。例如 CSS 写得很复杂时不要用它来取巧，要好好整理并重构之前的部分，保持选择器简短并且避免用 ID 将效果拔群。</p>
-<p><strong>魔数与绝对定位</strong></p>
-<p>魔数（Magic Number）是指那些「凑巧有效果」的数字，这东西非常不好，因为它们只是治标不治本而且缺乏拓展性。</p>
-<p>例如 .dropdown-nav li:hover ul{ top:37px; } 把下拉菜单移动下来远非良策，因为这里的 37px 就是个魔数。37px 会生效的原因是因为这时 .dropbox-nav 碰巧高 37px 而已。</p>
-<p>这时你应该用 .dropdown-nav li:hover ul{ top:100%; }，也即无论 .dropbox-down 多高，这个下拉菜单都会往下移动 100%。</p>
-<p>每当你要在代码中放入数字的时候，请三思而行。如果你能用一个关键字（例如 top:100% 意即「从上面拉到最下面」）替换之，或者有更好的解决方法的话，就尽量避免直接出现数字。</p>
-<p>你在 CSS 中留下的每一个数字，都是你许下而不愿遵守的承诺。</p>
-<p><strong>条件判断</strong></p>
-<p>专门为 IE 写的样式基本上都是可以避免的，唯一需要为 IE 专门处理的是为了处理 IE 不支持的内容（例如 PNG）。</p>
-<p>简而言之，如果你重构 CSS 的话，所有的布局和盒模型都不用额外兼容 IE。也就是说你基本上不用 <!--[if IE 7]> element{ margin-left:-9px; } < ![endif]--> 或者类似的兼容 IE 的写法。</p>
-<p><strong>Debugging</strong></p>
-<p>如果你要解决 CSS 问题的话，先把旧代码拿掉再写新的。如果旧的 CSS 中有问题的话，写新代码是解决不了的。</p>
-<p>把 CSS 代码和 HTML 部分删掉，直到没有 BUG 为止，然后你就知道问题出在哪里了。</p>
-<p>有时候写上一个 overflow:hidden 或者其它能把问题藏起来的代码的确效果立竿见影，但是 overflow 方面可能根本就没问题。所以要治本，而不是单纯治标。</p>
-<p><strong>CSS 预处理器</strong></p>
-<p>我用 Sass。使用时应当灵活运用。用 Sass 可以令你的 CSS 更强大，但是不要嵌套得太复杂。在 Vanilla CSS 中，只在必要的地方用嵌套即可，例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.header&#123;&#125;</div><div class="line">.header .site-nav&#123;&#125;</div><div class="line">.header .site-nav li&#123;&#125;</div><div class="line">.header .site-nav li a&#123;&#125;</div></pre></td></tr></table></figure>
-<p>这样的写法在普通 CSS 里完全用不到。以下为不好的 Sass 写法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">.header&#123;</div><div class="line">    .site-nav&#123;</div><div class="line">        li&#123;</div><div class="line">            a&#123;&#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>如果你用 Sass 的话，尽量这么写：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.header&#123;&#125;</div><div class="line">.site-nav&#123;</div><div class="line">    li&#123;&#125;</div><div class="line">    a&#123;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>最后我列出一些我将要用到的技巧，并且坚持做下去：</p>
-<pre><code>尽量不让自己的样式层级超过三层
-尽量不使用!important，通过添加和使用类名，比如.hidden类名
-尽量远离Sass中介绍@extend的一般经验法则——他们有些是迷惑人
-尽量在样式表中添加注释
-让团队写CSS有一个标准规范——Harry Roberts写了一个很有名的CSS指南
-此外，应该有一个可以展示元素样式的模块库
-使用类似scss-lint工具，让你的SCSS/CSS和规范保持一致
-尽量不要使用*这样的全局选择器
-JavaScript钩子是使用的类名，尽量加上前缀js-
-尽量在项目中重复使用类名和模块
-取名尽量和Bootstrap框架的组件接近
-在样式中避免使用#id
-</code></pre>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/07/CSS设计模式：OOCSS 和 SMACSS/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="yolo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YOLO">
-    </span>
 
     
-      <header class="post-header">
 
+      
+      
+      
+
+      
+      
+
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2017/04/07/CSS设计模式：OOCSS 和 SMACSS/" itemprop="url">
               
-                
-                <a class="post-title-link" href="/2017/04/07/CSS设计模式：OOCSS 和 SMACSS/" itemprop="url">
-                  Unbenannt
-                </a>
+                <span itemprop="name">Unbenannt</span>
               
-            
-          </h1>
+            </a>
         
+      </h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-07T17:07:23+08:00">
-                2017-04-07
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-04-07T17:07:23+08:00"
+              content="2017-04-07" >
+          04-07
+        </time>
+      </div>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/04/07/CSS设计模式：OOCSS 和 SMACSS/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/07/CSS设计模式：OOCSS 和 SMACSS/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="CSS设计模式：OOCSS-和-SMACSS"><a href="#CSS设计模式：OOCSS-和-SMACSS" class="headerlink" title="CSS设计模式：OOCSS 和 SMACSS"></a>CSS设计模式：OOCSS 和 SMACSS</h2><p><strong>OOCSS</strong><br><strong>语义化和演示(视觉)类名</strong></p>
-<ul>
-<li><p>演示(Presentational)：这里更趋向于将其称之为视觉类名，就是纯视觉。简单点说，视觉化类名是没有任何意思，就是根据视觉呈现的风格化，将其在HTML元素中声明类名。也就是说根据，视觉的表象，在HTML定义对应的类名，比如red、blue、mb10等</p>
-</li>
-<li><p>语义化(Semantic):根据语义化在HTML中给元素定义类名。简单点说，就是根据功能模块，在HTML中定义类名，比如.user-registration或者.billing-info等</p>
-</li>
-</ul>
-<p><strong>OOCSS基本原则</strong></p>
-<p>先来看看OOCSS基本原则中，认为比较好的方面：</p>
-<ul>
-<li>强调重用</li>
-<li>选择器简洁</li>
-<li>可扩展类</li>
-<li>强调风格与内容分离</li>
-<li><p>强调内容与容器分离</p>
-<p>既然有好的一面，当然也不足的地方：</p>
-</li>
-<li><p>大量使用演示类</p>
-</li>
-<li>需要在模板中应用演示类</li>
-<li>样式(CSS)和结构(HTML)藕合太紧</li>
-<li>如果设计变动，需要更改CSS和HTML</li>
-<li>创建了数千行CSS，但有可能这些CSS永远不会被使用。比如Twitter Bootstrap</li>
-</ul>
-<p>OOCSS 不是什么新技术，只是一种撰写 CSS 的设计模式，或者可以说是一种「道德规范」，大致上我觉得重点只有两个：</p>
-<ul>
-<li>减少对 HTML 结构的依赖</li>
-<li><p>增加 CSS class 重复性的使用</p>
-<p>减少对 HTML 结构的依赖</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;nav class=&quot;nav--main&quot;&gt;</div><div class="line">  &lt;ul&gt;</div><div class="line">    &lt;li&gt;&lt;a&gt;.........&lt;/a&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;a&gt;.........&lt;/a&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;a&gt;.........&lt;/a&gt;&lt;/li&gt;</div><div class="line">  &lt;/ul&gt; 　   </div><div class="line">&lt;/nav&gt;</div></pre></td></tr></table></figure>
-<p>一般的导航栏写法，结构应该会像上面的 HTML 范例一样，如果要对那些a标签定义样式，CSS 的写法可能写成 .nav–main ul li a {}，这种写法先不管效能上的问题，可以看出来过度地依赖元素标签的结构，有可能之后 HTML 结构改变，这个 CSS 就必须跟著重构，造成维护上多余的成本。</p>
-<p>若从这个例子来考量，原则上 a都一定会接在 li 标签的后面，一个 li 只会有一个 a，通常不会独立存在，那就可以写成 .nav–main a {}，会是比较好的写法，甚至是直接给 a 加上 class nav–main_item。后者是 OOCSS 所提倡的用法。</p>
-<p><strong>增加 CSS class 的重复使用</strong><br>在 OOCSS 的观念中，强调重复使用 class，而应该避免使用 id 作为 CSS 的选择器。这种想法就是像OOP<br>尽量抽离重复的程式码，例如以下这个例子，这是两种按钮的 CSS 样式属性：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">.button &#123;</div><div class="line">  display: inline-block;</div><div class="line">  padding: 6px 12px;</div><div class="line">  color: hsla(0, 100%, 100%, 1);</div><div class="line">  &amp;.button-default &#123; background: hsla(180, 1%, 28%, 1); &#125;</div><div class="line">  &amp;.button-primary &#123; background: hsla(208, 56%, 53%, 1); &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>上面的 CSS 将两种不同样式的 button，抽离出重复的部份，并且定义在同个 class 上。因此，要使用这样的样式，HTML 的写法可能长这个样子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;a class=&quot;button button-default&quot;&gt;</div><div class="line">&lt;a class=&quot;button button-primary&quot;&gt;</div></pre></td></tr></table></figure>
-<p>先用 button 宣告此为一个按钮的样式，再用 button-default 或 button-primary 作为按钮底色的区别。这么做可以维护成本变得比较低，例如：想要改网站上所有按钮的大小，就只要修改 .button 的 padding 而已。</p>
-<p><strong>SMACSS</strong><br>SMACSS 的概念仅限于它对 CSS 不同的业务逻辑所做的划分方式</p>
-<p><strong>Base</strong><br>Base 就是设定标签元素的预设值，例如浏览器的 reset 可以写在这里，如果用的是 Compass，只要 @include global-reset 即可。这里只会对标签元素本身做设定，不会出现任何 class 或id，但是可以有属性选择器或是伪类：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">html &#123;&#125;</div><div class="line">input[type=text] &#123;&#125;</div><div class="line">a:hover &#123;&#125;</div></pre></td></tr></table></figure>
-<p><strong>Layout</strong><br>Layout 是指整个网站的「大架构」的外观，而非 .button 这种小元件的 class。网站通常会有一些主要的大区块，可能是 header 或 footer，Layout 就是用来定义这些「大架构」的 CSS。如果有做 Responsive Web Design 或是用 Grid System，也是把规则写在 Layout 这里。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#header &#123; margin: 30px 0; &#125;</div><div class="line">#articles-wrapper &#123; ......; &#125;</div><div class="line">.sidebar &#123;</div><div class="line">  &amp;.sidebar--right &#123; ......; &#125;</div><div class="line">  &amp;.sidebar-left &#123; ......; &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>通常只有一个选择器，一个 id、或一个 class</p>
-<p><strong>Module</strong></p>
-<p>原本的 SMACSS 对 Module 的设计我觉得不是很好，所以我硬是将 Module 拆分出一个 Partial。</p>
-<p>这里的 Module 顾名思义，就是可以在其他地方被重复使用，如果要找更明确的例子，我想就像 Twitter Bootstrap 的 Components<br>一样，或者像前面 OOCSS 所举例的 .button 这种会被重复使用的元件模组。</p>
-<p>模组不需要用任何的 prefix，因为 Module 就是设计来可以重复应用在不同的 page 上。</p>
-<p><strong>Partial</strong></p>
-<p>Partial 跟 Latout 不同，也跟 Module 不同，他比 Layout 的范围小，可能是 header 底下的某个子元素。他不像 Module，他是特定单一领域下特别的设定。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.nav--main &#123;</div><div class="line">  a &#123; ......; &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>通常会将 Partial 的名称加在子 class 作为 prefix，例如 .nav–main 底下的<br>.nav–main_item。</p>
-<p><strong>State</strong></p>
-<p>State 负责定义元素不同的状态下，所呈现的样式。但是并非指一个元素的 :hover 或 :active 下的状态。举例来说，一个导航栏分页，目前所在页面的分页需要加上 .active<br>的属性表示目前位置是在这个分页，HTML 会长这样：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;nav class=&quot;nav--main&quot;&gt;</div><div class="line">  &lt;ul&gt;</div><div class="line">    &lt;li&gt;&lt;a&gt;.........&lt;/a&gt;&lt;/li&gt;</div><div class="line">    &lt;li class=&quot;active&quot;&gt;&lt;a&gt;.........&lt;/a&gt;&lt;/li&gt;</div><div class="line">    &lt;li&gt;&lt;a&gt;.........&lt;/a&gt;&lt;/li&gt;</div><div class="line">  &lt;/ul&gt;</div><div class="line">&lt;/nav&gt;</div></pre></td></tr></table></figure>
-<p>因此可以替 .nav–main 增加 .active 这样的子 class：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.nav--main &#123;</div><div class="line">  // others…;</div><div class="line">  .active &#123;</div><div class="line">    background: darken($background-color, 16%);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><strong>Theme</strong></p>
-<p>Theme 是画面上所有「皮肤」的定义，例如 border-color、background-image 或是 font-family 等相关的 Typography 设定。为什么说是「皮肤」？因为有些元件模组仍然是留在 Module 去定义，Theme 就像 Layout 一样负责「大架构」上的视觉样式。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
 
 
+
     
+
   </section>
 
   
+
 
           
           </div>
@@ -1047,6 +548,12 @@ JavaScript钩子是使用的类名，尽量加上前缀js-
   
 
   
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   
 
